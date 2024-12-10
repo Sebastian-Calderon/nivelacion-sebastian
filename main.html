@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+
+    <header>
+        <img class="back-img" src="./medios/img-bg.jpg" alt="">
+        <div id="container_header">
+            <div id="logo">
+                <img src="./medios/Logo.png" alt="">
+            </div>
+            <nav>
+                <ul id="navlinks">
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#AccionContainer">Top del dia</a></li>
+                    <li><a href="#AnimadaContainer">Proximamente</a></li>
+                    <li><a href="#AventuraContainer">Estrenos</a></li>
+                </ul>
+            </nav>
+            <button>Login</button>
+        </div>
+
+        <div id="container_header-mobile">
+            <div class="header-mobile">
+                <img class="img1" src="./medios/Logo.png" alt="">
+                <img id="btnMenu" class="img2" src="./medios/menu.png" alt="">
+            </div>
+            <div class="sideBar">
+                <nav>
+                    <ul id="navlinks-mobile">
+                        <li><a href="#">Editar mi cuentta</a></li>
+                        <li><a href="#hero">Inicio</a></li>
+                        <li><a href="#AccionContainer">Top del dia</a></li>
+                        <li><a href="#AnimadaContainer">Proximamente</a></li>
+                        <li><a href="#AventuraContainer">Estrenos</a></li>
+                        <li><a href="./index.html">Cerrar Sesion</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </div>
+
+        <div id="hero">
+            <h2>Spider-Man: <br> A través del Spider-Verso
+            </h2>
+            <p>Después de reunirse con Gwen Stacy, el amigable vecino de tiempo completo de Brooklyn Spiderman, <br> es lanzado a través del multiverso, donde se encuentra a un equipo de gente araña encomendada <br> con proteger su mera existencia.</p>
+            <div class="btns">
+                <a target="_blank" href="https://www.youtube.com/watch?v=_1f2RLdxQfA"><button class="btn1"><img src="./medios/boton_play.png" alt="">Play</button></a>
+                <button class="btn2">Ver mas...</button>
+            </div>
+        </div>
+        </header>
+
+
+    <div class="container-accion" id="AccionContainer">
+        
+        <div class="movies-wrapper">
+            <div class="header-wrapper">
+                <h2>Top 8 del dia</h2>
+            <div class="containerBtns">
+                <i class="fa-solid fa-chevron-left btnPrev"></i>
+            <i class="fa-solid fa-chevron-right btnNext"></i>
+            </div>
+            </div>
+            <section class="movies-container">
+            </section>
+            <div id="movieModal" class="modal">
+                <div class="modal-content">
+                    <span id="closeBtn" class="close">&times;</span>
+                    <div>
+                        <div class="imgContainer">
+                            <img id="movieImg" src="" alt="">
+                        </div>
+                       <div class="info-container">
+                        <h2 id="movieTitle"></h2>
+                        <p><strong>Estreno:</strong> <span id="movieYear"></span></p>
+                        <p><strong>Género:</strong> <span id="movieGenre"></span></p>
+                        <p id="movieDescription"></p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <div class="container-animadas" id="AnimadaContainer">
+        <div class="movies-wrapper">
+            <div class="header-wrapper">
+                <h2>Proximamente</h2>
+            <div class="containerBtns">
+                <i class="fa-solid fa-chevron-left btnPrev"></i>
+            <i class="fa-solid fa-chevron-right btnNext"></i>
+            </div>
+            </div>
+            <section class="movies-container">
+            </section>
+            <div id="movieModal" class="modal">
+                <div class="modal-content">
+                    <span id="closeBtn" class="close">&times;</span>
+                    <div class="imgContainer">
+                        <img id="movieImg" src="" alt="">
+                    </div>
+                   <div class="info-container">
+                    <h2 id="movieTitle"></h2>
+                    <p><strong>Estreno:</strong> <span id="movieYear"></span></p>
+                    <p><strong>Género:</strong> <span id="movieGenre"></span></p>
+                    <p id="movieDescription"></p>
+                   </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="container-aventura" id="AventuraContainer">
+        <div class="movies-wrapper">
+            <div class="header-wrapper">
+                <h2>Estrenos</h2>
+            <div class="containerBtns">
+                <i class="fa-solid fa-chevron-left btnPrev"></i>
+            <i class="fa-solid fa-chevron-right btnNext"></i>
+            </div>
+            </div>
+            <section class="movies-container">
+            </section>
+            <div id="movieModal" class="modal">
+                <div class="modal-content">
+                    <span id="closeBtn" class="close">&times;</span>
+                    <div class="imgContainer">
+                        <img id="movieImg" src="" alt="">
+                    </div>
+                   <div class="info-container">
+                    <h2 id="movieTitle"></h2>
+                    <p><strong>Estreno:</strong> <span id="movieYear"></span></p>
+                    <p><strong>Género:</strong> <span id="movieGenre"></span></p>
+                    <p id="movieDescription"></p>
+                   </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <footer class="footer container">
+
+        <h3>cineScape</h3>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Peliculas</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </footer>
+
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
